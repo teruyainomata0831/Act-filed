@@ -10,6 +10,8 @@ body {
   background-image: url(img/main01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  animation: bg-image 10s infinite;
+  -webkit-animation: bg-image 10s infinite;
 }
 #nav-drawer {
   display: none;
@@ -98,6 +100,8 @@ hr {
   background-image: url(img/works01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  animation: bg-image2 10s infinite;
+  -webkit-animation: bg-image2 10s infinite;
 }
 .works-img h2 {
   color: #fff;
@@ -278,6 +282,7 @@ hr {
     width: 200px;
     display: block;
     margin: 30px auto;
+    height: auto;
   }
   .header-menu {
     display: none;
@@ -316,4 +321,38 @@ hr {
     display: inline-block;
     text-align: center;
   }
+}
+
+@-webkit-keyframes bg-image {
+  0% { background-image: url(img/main01.jpg); }
+  20% { background-image: url(img/main01.jpg); }
+  40% { background-image: url(img/main02.jpg); }
+  60% { background-image: url(img/main02.jpg); }
+  80% { background-image: url(img/main01.jpg); }
+  100% { background-image: url(img/main01.jpg); }
+}
+@keyframes bg-image {
+  0% { background-image: url(img/main01.jpg); }
+  20% { background-image: url(img/main01.jpg); }
+  40% { background-image: url(img/main02.jpg); }
+  60% { background-image: url(img/main02.jpg); }
+  80% { background-image: url(img/main01.jpg); }
+  100% { background-image: url(img/main01.jpg); }
+}
+
+@-webkit-keyframes bg-image2 {
+  0% { background-image: url(img/works01.jpg); }
+  20% { background-image: url(img/works01.jpg); }
+  40% { background-image: url(img/works03.jpg); }
+  60% { background-image: url(img/works03.jpg); }
+  80% { background-image: url(img/works01.jpg); }
+  100% { background-image: url(img/works01.jpg); }
+}
+@keyframes bg-image2 {
+  0% { background-image: url(img/works01.jpg); }
+  20% { background-image: url(img/works01.jpg); }
+  40% { background-image: url(img/works03.jpg); }
+  60% { background-image: url(img/works03.jpg); }
+  80% { background-image: url(img/works01.jpg); }
+  100% { background-image: url(img/works01.jpg); }
 }
