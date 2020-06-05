@@ -109,26 +109,45 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.slideBtn:hover {
+.swiper-button-prev {
+  z-index: 200;
+}
+.swiper-button-next {
+  z-index: 200;
+}
+.swiper-button-prev:hover {
   opacity: 0.7;
 }
-.works-img h2 {
+.swiper-button-next:hover {
+  opacity: 0.7;
+}
+.works-title {
+  width: 100%;
   color: #fff;
   margin: 0;
-  margin-bottom: 75px;
-  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  margin-top: 75px;
 }
 .works-txt {
-  color: #fff;
   margin: 0;
+  letter-spacing: 3px;
+  line-height: 40px;
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 170px;
 }
-.worksBox {
-  display: flex;
-  justify-content: space-between;
+.worksBtn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin: 0;
+  margin-top: 200px;
 }
-.worksBox img {
-  width: 41px;
-  height: 41px;
+.worksBtn:hover {
+  color: #333;
 }
 .newsBox {
   width: 70%;
@@ -311,11 +330,30 @@ hr {
   .concept-txt {
     margin: 0 15px;
   }
+  .swiper-container {
+    width: 100%;
+    height: 310px;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 310px;
+  }
   .swiper-slide img {
     width: 100%;
     height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .works-title {
+    width: 100%;
+    height: 310px;
+    margin-top: 50px;
+  }
+  .works-txt {
+    margin-top: 120px;
+  }
+  .worksBtn {
+    margin-top: 125px;
   }
   .performanceBtn {
     white-space: nowrap;
