@@ -354,6 +354,7 @@ hr {
   }
   .worksBtn {
     margin-top: 125px;
+    white-space: nowrap;
   }
   .performanceBtn {
     white-space: nowrap;
