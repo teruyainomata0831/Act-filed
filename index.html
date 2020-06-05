@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>福岡県のエクステリア&ガーデン設計事務所｜アクトフィールド Act field</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap&subset=japanese" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
       </div>
     </header>
 
-    <div class="concept">
+    <section class="concept">
       <h2>CONCEPT
         <hr>
       </h2>
@@ -40,24 +41,42 @@
       その中よりお客様のスタイルに合わせたアイテムを提案し、<br>
       デザインを楽しみながらプランニングするお手伝いができればと考えております。</p>
       <button class="btn">About</button>
-    </div>
+    </section>
 
-    <div class="works">
+    <!-- <section class="works">
       <div class="works-img">
         <h2>WORKS
           <hr>
         </h2>
         <div class="worksBox">
-          <img src="img/controls-l.png" alt="">
+          <img class="slideBtn" src="img/controls-l.png" alt="">
           <p class="works-txt">#01/Fukuika-shi,Fukuoka<br>
           TERRACE GARDEN</p>
-          <img src="img/controls-r.png" alt="">
+          <img class="slideBtn" src="img/controls-r.png" alt="">
         </div>
         <button class="btn">ALL WORKS</button>
       </div>
-    </div>
+    </section> -->
+    <section class="works">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/works01.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/main02.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/works03.jpg" alt="">
+            </div>
+        </div>
+        <img class="swiper-button-prev" src="img/controls-l.png" alt="">
+        <img class="swiper-button-next" src="img/controls-r.png" alt="">
+      </div>
+    </section>
+  </div>
 
-    <div class="news">
+    <section class="news">
       <h2>News
         <hr>
       </h2>
@@ -80,17 +99,22 @@
         </div>
       </div>
       <button class="btn">All NEWS</button>
-    </div>
+    </section>
 
-    <div class="contact">
+    <section class="contact">
       <h2>CONTACT
         <hr>
       </h2>
       <p class="contact-txt">エクステリアのご相談や資料請求、物件に関するご質問はこちらからお問い合わせください。</p>
       <button class="btn">FORM</button>
-    </div>
+    </section>
 
-    <div class="footer">
+    <footer class="footer">
+      <p class="pagetop">
+        <a href="#">
+          <img src="img/pagetop.png" alt="PAGETOP" class="pagetop-icon">
+        </a>
+      </p>
       <div class="footerBox">
         <img class="footer-img" src="img/logo-f.png" alt="">
         <div class="footer-txt">
@@ -98,7 +122,9 @@
           <p>&copy;2016 Act field. All rights reserved.</p>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
